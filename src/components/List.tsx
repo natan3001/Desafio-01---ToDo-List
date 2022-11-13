@@ -1,3 +1,4 @@
+import { EmptyList } from "./EmptyList";
 import styles from "./List.module.css";
 
 interface listProps {
@@ -17,15 +18,11 @@ export function List({ createdTasks, doneTasks, children }: listProps) {
 
         <div className={styles.count}>
           <strong>Concluídas</strong>
-          <span>
-            {doneTasks > 0 ? `${doneTasks} de ${createdTasks}` : doneTasks}
-          </span>
+          <span>{doneTasks > 0 ? `${doneTasks} de ${createdTasks}` : doneTasks}</span>
         </div>
       </div>
 
-      <div className={styles.taskList}>
-        {children.length > 0 ? children : "Nada encontrado"}
-      </div>
+      <div className={styles.taskList}>{children.length > 0 ? children : <EmptyList />}</div>
     </>
   );
 }
