@@ -10,14 +10,14 @@ import styles from "./App.module.css";
 
 import "./global.css";
 
-export interface TaskProps {
+interface TasksProps {
   id: string;
   content: string;
   isDone: boolean;
 }
 
 function App() {
-  const [tasks, setTasks] = useState<TaskProps[]>([
+  const [tasks, setTasks] = useState<TasksProps[]>([
     {
       id: "12312354354",
       content: "Comprar um pizza de pepperoni",
@@ -29,20 +29,38 @@ function App() {
       isDone: false,
     },
     {
-      id: "12312354354",
+      id: "12312354324",
       content: "Terminar esse todo list",
       isDone: false,
     },
   ]);
 
   function addNewTask(content: string) {
-    const newTask: TaskProps = {
+    const newTask: TasksProps = {
       id: uuidv4(),
       content: content,
       isDone: false,
     };
 
     setTasks([...tasks, newTask]);
+  }
+
+  function changeDoneStatus(id: string) {
+    const tasksWithUpdatedOne = tasks.map((task) => {
+      if (task.id === id) {
+        task.isDone = !task.isDone;
+      }
+
+      return task;
+    });
+
+    setTasks(tasksWithUpdatedOne);
+  }
+
+  function deleteTask(id: string) {
+    const tasksWithDeletedOne = tasks.filter((task) => task.id !== id);
+
+    setTasks(tasksWithDeletedOne);
   }
 
   const createdTasks = tasks.length;
@@ -56,7 +74,16 @@ function App() {
         <NewTask onSubmit={addNewTask} />
         <List createdTasks={createdTasks} doneTasks={doneTasks}>
           {tasks.map(({ id, isDone, content }) => {
-            return <Task key={id} id={id} isDone={isDone} content={content} />;
+            return (
+              <Task
+                key={id}
+                id={id}
+                isDone={isDone}
+                content={content}
+                onCheckTask={changeDoneStatus}
+                onDeleteTask={deleteTask}
+              />
+            );
           })}
         </List>
       </div>
