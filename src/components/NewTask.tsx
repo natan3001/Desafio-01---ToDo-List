@@ -3,11 +3,16 @@ import { PlusCircle } from "phosphor-react";
 
 import styles from "./NewTask.module.css";
 
-export function NewTask() {
+interface newTaskProps {
+  onSubmit: (content: string) => void;
+}
+
+export function NewTask({ onSubmit }: newTaskProps) {
   const [newTask, setNewTask] = useState("");
 
   function handleNewTaskSubmit(event: FormEvent) {
     event.preventDefault();
+    onSubmit(newTask);
     setNewTask("");
   }
 

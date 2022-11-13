@@ -92,3 +92,8 @@
 .task button:hover {
   color: var(--danger);
 }
+
+p.taskFinished {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
