@@ -1,9 +1,10 @@
 import { Header } from "./components/Header";
+import { NewTask } from "./components/NewTask";
+import { List } from "./components/List";
 
 import styles from "./App.module.css";
 
 import "./global.css";
-import { NewTask } from "./components/NewTask";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
       <div className={styles.wrapper}>
         <NewTask />
+        <List />
       </div>
     </div>
   );

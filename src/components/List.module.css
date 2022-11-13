@@ -1,0 +1,28 @@
+.tasksInfo {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.count:nth-child(1) strong {
+  color: var(--blue);
+}
+
+.count:nth-child(2) strong {
+  color: var(--purple);
+}
+
+.count span {
+  font-size: 0.875rem;
+  padding: 0.125rem 0.5rem;
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+}
