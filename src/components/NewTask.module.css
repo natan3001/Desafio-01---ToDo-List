@@ -1,0 +1,39 @@
+.addNewTaskform {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: -1.5rem;
+}
+
+.addNewTaskform input[name="task"] {
+  flex: 1;
+  background-color: var(--gray-500);
+  color: var(--gray-300);
+  border: 0;
+  padding: 1rem;
+  line-height: 1.4;
+  border-radius: 8px;
+}
+
+.addNewTaskform input[name="task"]:focus {
+  color: var(--gray-100);
+  outline: 1px solid var(--purple-dark);
+}
+
+.addNewTaskform button[type="submit"] {
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  border-radius: 8px;
+  padding: 1rem;
+
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.addNewTaskform button[type="submit"]:hover {
+  background-color: var(--blue);
+}
