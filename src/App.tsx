@@ -30,7 +30,7 @@ function App() {
     },
     {
       id: "12312354324",
-      content: "Terminar esse todo list",
+      content: "Terminar essa todo list",
       isDone: false,
     },
   ]);

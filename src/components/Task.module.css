@@ -36,6 +36,8 @@
   transition: 0.2s;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
 }
 
 .customCheckbox > span:hover,
@@ -64,10 +66,7 @@
   border-right: none;
   content: "";
   height: 3px;
-  left: 8px;
   opacity: 0;
-  position: absolute;
-  top: 8px;
   transform: rotate(-45deg);
   width: 6px;
 }
@@ -81,16 +80,17 @@
 .task button {
   background-color: transparent;
   border: 0;
-  height: 1.5rem;
+  height: 1.2rem;
   cursor: pointer;
-  padding: 0.2rem;
+  padding: 0.1rem 0.2rem;
   color: var(--gray-300);
-  transition: background-color 2s;
+  transition: background-color 0.2s;
   border-radius: 2px;
 }
 
 .task button:hover {
   color: var(--danger);
+  background-color: var(--gray-400);
 }
 
 p.taskFinished {
