@@ -57,9 +57,9 @@ function App() {
   }
 
   function deleteTask(id: string) {
-    const tasksWithDeletedOne = tasks.filter((task) => task.id !== id);
+    const tasksWithoutDeletedOne = tasks.filter((task) => task.id !== id);
 
-    setTasks(tasksWithDeletedOne);
+    setTasks(tasksWithoutDeletedOne);
   }
 
   const createdTasks = tasks.length;
