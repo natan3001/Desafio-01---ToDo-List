@@ -18,21 +18,21 @@ interface TasksProps {
 
 function App() {
   const [tasks, setTasks] = useState<TasksProps[]>([
-    // {
-    //   id: "12312354354",
-    //   content: "Comprar um pizza de pepperoni",
-    //   isDone: true,
-    // },
-    // {
-    //   id: "13215468798",
-    //   content: "Fazer um café TOP",
-    //   isDone: false,
-    // },
-    // {
-    //   id: "12312354324",
-    //   content: "Terminar essa todo list",
-    //   isDone: false,
-    // },
+    {
+      id: "12312354354",
+      content: "Comprar um pizza de pepperoni",
+      isDone: true,
+    },
+    {
+      id: "13215468798",
+      content: "Fazer um café TOP",
+      isDone: false,
+    },
+    {
+      id: "12312354324",
+      content: "Terminar essa todo list",
+      isDone: false,
+    },
   ]);
 
   function addNewTask(content: string) {
@@ -50,7 +50,6 @@ function App() {
       if (task.id === id) {
         task.isDone = !task.isDone;
       }
-
       return task;
     });
 
