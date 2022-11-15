@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Desenvolvido uma aplicação de controle de tarefas no estilo **to-do list**, <a href="https://desafio-01-to-do-list.vercel.app/">clique aqui para acessar</a>
+  Desenvolvido uma aplicação de controle de tarefas no estilo <strong>to-do list</strong>, <a target="_blank" href="https://desafio-01-to-do-list.vercel.app/">clique aqui para acessar</a>
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Nesse desafio, foi desenvolvido uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
+Nesse desafio, foi desenvolvido uma aplicação de controle de tarefas no estilo <strong>to-do list</strong>, que contém as seguintes funcionalidades:
 
 - Adicionar uma nova tarefa
 - Marcar e desmarcar uma tarefa como concluída
