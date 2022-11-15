@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  O projeto é uma lista de tarefas, onde é possivel adicionar, remover e marcar como concluídos. Também é mostrado a contagem de tarefas concluídas e criadas.
+  Desenvolvido uma aplicação de controle de tarefas no estilo **to-do list**, <a href="https://desafio-01-to-do-list.vercel.app/">clique aqui para acessar</a>
 </p>
 
 <p align="center">
@@ -32,7 +32,20 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto do ToDo List realizado foi para aprender e praticar os conceitos de estado, iteração no JSX, a propriedade key, componentes e propriedades visto no projeto do Ignite Feed.
+Nesse desafio, foi desenvolvido uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
+
+- Adicionar uma nova tarefa
+- Marcar e desmarcar uma tarefa como concluída
+- Remover uma tarefa da listagem
+- Mostrar o progresso de conclusão das tarefas
+
+Apesar de serem poucas funcionalidades, foi usado os seguintes conceitos:
+
+- Estados
+- Imutabilidade do estado
+- Listas e chaves no ReactJS
+- Propriedades
+- Componentização
 
 ## :memo: Licença
 
